@@ -1,0 +1,38 @@
+
+
+.navbar-container {
+  background-color: #F2F2F2;
+  display: flex;
+  position: fixed;
+  left: 0;
+  width: 160px;
+}
+
+a {
+  background-color: #6B52AE;
+  color: white;
+  cursor: pointer;
+  margin: 1em;
+  padding: 0.5em;
+}
+
+/* Mobile */
+@media only screen and (max-width: 601px) {
+  .navbar-container {
+    position: fixed;
+    bottom: 0;
+    min-width: 100vw;
+  }
+}
+
+/* Web */
+@media only screen and (min-width: 600px) {
+  .navbar-container {
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  a {
+    background-color: red;
+  }
+}
